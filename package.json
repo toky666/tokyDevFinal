@@ -1,0 +1,50 @@
+{
+  "name": "tokydevfinal",
+  "version": "1.0.0",
+  "description": "Nueva version del portafolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev --port 4322",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [
+    "TokyDev",
+    "Portfolio",
+    "Astro"
+  ],
+  "author": "TokyDev",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/vercel": "^9.0.3",
+    "@emotion/styled": "11.13.0",
+    "@fontsource-variable/fira-code": "5.0.18",
+    "@fontsource-variable/montserrat": "5.0.19",
+    "@fontsource/questrial": "5.0.13",
+    "@mui/material": "5.16.7",
+    "astro": "^5.16.6",
+    "astro-embed": "^0.9.0",
+    "dotenv": "16.4.5",
+    "email-validator": "^2.0.4",
+    "email-verifier": "^0.0.1",
+    "iconify-icon": "^2.3.0",
+    "install": "^0.13.0",
+    "nodemailer": "6.9.15",
+    "npm": "^10.9.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-github-calendar": "4.2.2",
+    "sass": "1.77.8"
+  },
+  "devDependencies": {
+    "@types/node": "22.5.4",
+    "@types/nodemailer": "^7.0.4",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "stylelint": "^16.9.0",
+    "stylelint-prettier": "^5.0.2"
+  }
+}

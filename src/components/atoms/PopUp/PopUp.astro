@@ -1,0 +1,16 @@
+---
+const {clase, } = Astro.props;
+---
+
+<dialog class={`popup ${clase}`} >
+  <slot />
+</dialog>
+
+
+<style lang="scss" >
+    .popup{
+        position: absolute;
+        background-color: red;
+        border: none;
+    }
+</style>

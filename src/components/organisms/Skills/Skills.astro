@@ -1,0 +1,56 @@
+---
+import Title from "@src/components/atoms/Title/Title";
+import CarrouselSkills from "@src/components/molecules/CarouselSkills/CarrouselSkills.astro";
+import CarouselTools from "@src/components/molecules/CarouselTools/CarouselTools.astro";
+import CardTerminal from "@molecules/CardTerminal/cardTerminal.astro";
+
+import { userData } from "@data/userData";
+import { skillsData } from "@data/skillsData";
+import { toolsData } from "@data/ToolsData";
+//const { data, skills, tools } = Astro.props;
+---
+
+<script>
+  import { d } from "@src/controllers/TerminalSkills.controller";
+</script>
+
+<section class="skills" id="skills">
+  <div class="skills__container">
+    <div class="skills__info">
+      <div class="skills__textos">
+        <Title titleDesc="Skills" clase="title-dark" />
+        <p class="skills__description">
+          {userData.aboutSkills.intro}
+        </p>
+        <h5 class="skills__description skills__description--subtitle">
+          {userData.aboutSkills.highlighted}
+        </h5>
+        <p class="skills__description">
+          {userData.aboutSkills.continuation}
+        </p>
+      </div>
+      <div class="skills__avatar__container">
+        <img
+          id="skills__avatar"
+          class="skills__avatar"
+          src="/img/michi.png"
+          alt={`avatar funko of ${userData.userName}`}
+          width="300"
+          height="300"
+        />
+
+        <CardTerminal clase="skills__terminal skills__popup">
+          <p class="skills__terminal__content">
+            {userData.terminalInfo}
+            <span class="cursor"></span>
+          </p>
+        </CardTerminal>
+      </div>
+    </div>
+    <CarrouselSkills skillsData={skillsData} />
+    <div class="skills__carousel--tools">
+      <Title titleDesc="Tools" clase="title-dark" />
+      <CarouselTools toolsData={toolsData} />
+    </div>
+  </div>
+</section>

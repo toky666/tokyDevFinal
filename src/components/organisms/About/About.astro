@@ -1,0 +1,41 @@
+---
+import Title from "@atoms/Title/Title";
+import ButtonAbout from "@atoms/ButtonAbout/ButtonAbout.astro";
+import Calendar from "@src/components/molecules/GithubCalendar/Calendar";
+import { userData } from "@data/userData";
+export const prerender = true;
+const { data } = Astro.props
+import AboutData from "@data/about.mdx";
+---
+
+
+<section class="about" id="about">
+  <article class="about__container">
+    <div class="about__profile">
+      <div class="profile__box">
+        <img
+          src={userData.aboutPicture}
+          alt={`Fot de perfil de  ${userData.name} ${userData.lastName}`}
+          class="profile__box__image"
+          width="100"
+          height="100"
+        />
+      </div>
+      <ButtonAbout typeMail="true" data={userData.email} link={userData.email}  text="email" clase="email"/>
+      <ButtonAbout link={userData.cv}  text="Download cv" clase="cv"/>
+    </div>
+    <div class="about__content">
+      <Title titleDesc="About Me" clase="title-dark" />
+      <!-- <p class="about__description">
+          {userData.about.intro}
+        </p> -->
+        <!-- <h5 class="about__highlighted">{userData.about.highlighted}</h5> -->
+        <!-- <p class="about__description">
+          {data.about.continuation}
+        </p> -->
+        <!-- de aqui abajo esta bien -->
+        <AboutData />
+    </div>
+  </article>
+  <Calendar client:only="react" />
+</section>

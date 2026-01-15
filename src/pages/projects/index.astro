@@ -1,0 +1,32 @@
+---
+import Title from "@src/components/atoms/Title/Title";
+import CardPortfolio from "@src/components/molecules/CardPortfolio/CardPortfolio.astro";
+import PortfolioModal from "@src/components/organisms/Portfolio/portfolioModal/PortfolioModal.astro";
+import Layout from "@src/layouts/Layout.astro";
+import { portfolioCardsData } from "@src/services/getPortfolioCards";
+
+
+interface PortfolioCardData {
+  id: string;
+  title: string;
+  description: string;
+  image: string; // agrega más campos según lo que use CardPortfolio
+}
+const mainData: PortfolioCardData[] = await portfolioCardsData();
+---
+
+<Layout
+  pageTitle="Proyectos"
+  pageDescription="Proyectos realizados por Sofía Dev."
+>
+  <Title titleDesc="Portfolio" clase="title-dark portfolio__title" />
+  <div class="card__section">
+    {mainData.map((data:PortfolioCardData) => <CardPortfolio {...data} />)}
+  </div>
+</Layout>
+
+<PortfolioModal />
+
+<script>
+  import "@controllers/portfolioModal.controller.js";
+</script>

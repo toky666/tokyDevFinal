@@ -1,0 +1,40 @@
+---
+import { portfolioCardsData } from "@services/getPortfolioCards";
+import Title from "@src/components/atoms/Title/Title";
+import CardPortfolio from "@molecules/CardPortfolio/CardPortfolio.astro";
+import PortfolioModal from "./portfolioModal/PortfolioModal.astro";
+
+//const mainData = await portfolioCardsData();
+
+const { cardsLength = 6 } = Astro.props;
+
+export interface PortfolioCard {
+  imgSrc: string;
+  title: string;
+  skills: string[];
+  excerpt: string;
+  demoURL: string;
+  repoURL: string;
+  description: string;
+}
+const mainData: PortfolioCard[] = await portfolioCardsData();
+---
+
+<section class="portfolio" id="portfolio">
+  <Title titleDesc="Portfolio" clase="title-dark portfolio__title" />
+  <div class="card__section">
+    {mainData.slice(0, cardsLength).map((data:PortfolioCard) => <CardPortfolio {...data} />)}
+  </div>
+  `{
+    mainData.length > 3 && (
+      <a class="portfolio__projects-btn" href="/projects">
+        Ver todos
+      </a>
+    )
+  }`
+  <PortfolioModal />
+</section>
+
+<script>
+  import "@controllers/portfolioModal.controller.js";
+</script>

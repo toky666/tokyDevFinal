@@ -1,0 +1,38 @@
+---
+import Title from "@atoms/Title/Title";
+import SocialCard from "@molecules/SocialCard/SocialCard.astro";
+import ContactFormMain from "@molecules/ContactFormContent/ContactFormMain.astro";
+import DiscordCardContent from "@molecules/DiscordCardContent/DiscordCardContent.astro";
+//import SocialCard from "@molecules/SocialCard/SocialCard.astro";
+import YoutubeCardContent from "@molecules/YoutubeCardContent/YoutubeCardContent.astro";
+import ToastNotification from "@src/components/atoms/ToastNotification/ToastNotification.astro";
+//import BlogPost from "@src/components/molecules/BlogPost/BlogPost";
+import YoutubeModal from "@src/components/molecules/YoutubeModal/YoutubeModal.astro";
+---
+
+<section id="social" class="social">
+  <Title
+    titleDesc="Find me on   My social media"
+    clase="title-dark social__title"
+  />
+  <div class="social__grid">
+    <div class="social__item social__item-1">
+      <SocialCard >
+        <DiscordCardContent />
+      </SocialCard>
+    </div>
+    <div class="social__item social__item-2">
+      <SocialCard >
+        <YoutubeCardContent server:defer/>
+      </SocialCard>
+    </div>
+        <div class="social__item social__item-3">
+      <SocialCard>
+        <ContactFormMain />
+      </SocialCard>
+    </div>
+  </div>
+  <YoutubeModal server:defer/>
+  <!--<YoutubeModal server:defer/> -->
+</section>
+<ToastNotification />

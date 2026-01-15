@@ -1,0 +1,40 @@
+---
+import BackgroundGradient from "@src/layouts/BackgroundGradient/BackgroundGradient.astro";
+import Layout from "../layouts/Layout.astro";
+import Hero from "@src/components/organisms/Hero/Hero.astro";
+import DividerTop from "@src/components/atoms/DividerTop/DividerTop.astro";
+import { getData } from "@src/services/data";
+import About from "@src/components/organisms/About/About.astro";
+import ToastNotification from "@src/components/atoms/ToastNotification/ToastNotification.astro";
+import DividerBottom from "@src/components/atoms/DividerBottom/DividerBottom.astro";
+import Skills from "@src/components/organisms/Skills/Skills.astro";
+//const { user, skills, tools } = await getData();
+import Portfolio from "@src/components/organisms/Portfolio/Portfolio.astro";
+import Social from "@src/components/organisms/Social/Social.astro";
+import Footer from "@molecules/Footer/Footer.astro";
+export const prerender = true;
+---
+
+<Layout>
+  <BackgroundGradient>
+    <Hero/>
+  </BackgroundGradient>
+  <DividerTop />
+  <About />
+  <DividerBottom fill="shape-fill-3" />
+  <Skills />
+  <DividerTop fill="shape-fill-purple " />
+</Layout>
+<Portfolio cardsLength={3} server:defer />
+<DividerBottom fill="shape-fill-3" />
+<Social server:defer/>
+<Footer />
+<ToastNotification />
+<script>
+  import ToastNotification from "@src/controllers/toastAlerts.controller";
+  document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+      ToastNotification("This site is under construction 🚧🏗️", "info");
+    }, 4000);
+  });
+</script>
