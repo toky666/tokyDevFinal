@@ -17,7 +17,8 @@
       "@data/*": ["src/data/*"],
       "@services/*": ["src/services/*"],
       "@sass/*": ["src/sass/*"],
-      "@img/*": ["public/img/*"]
+      "@img/*": ["public/img/*"],
+      "@styles/*": ["src/styles/*"],
     },
     "moduleResolution": "node"
   }

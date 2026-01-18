@@ -3,14 +3,18 @@ import BackgroundIconsFloat from "@src/components/atoms/BackgroundIconsFloat/Bac
 import ProfilePicture from "@src/components/atoms/ProfilePicture/ProfilePicture.astro";
 import SocialIcons from "@src/components/atoms/SocialIcons/SocialIcons.astro";
 import { userData } from "../../../data/userData.js";
-
+import DarkBg from "@src/components/DarkBg.astro";
 ---
 
 <section class="hero">
   <BackgroundIconsFloat />
   <div class="hero__container">
+    <DarkBg />
     <div class="hero__content">
-      <h1 class="hero__title">Hi! I'm {userData.name}<span class="span__blink">{userData.lastName}</span></h1>
+      <h1 class="hero__title">
+        Hi! I'm {userData.name}<span class="span__blink"
+          >{userData.lastName}</span>
+      </h1>
       <div class="text__container">
         <p class="hero__slogan">≥{userData.sloganHero1}</p>
       </div>

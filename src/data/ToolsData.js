@@ -1,22 +1,23 @@
 export const toolsData = [
   {
-    name: "Slack",
-    icon: "devicon:slack",
+    name: "Kali Linux",
+    icon: "skill-icons:kali-light",
+  },
+  {
+    name: "Ubuntu",
+    icon: "logos:ubuntu",
+  },
+  {
+    name: "Android Studio",
+
+    icon: "skill-icons:androidstudio-light",
   },
   {
     name: "git",
 
     icon: "vscode-icons:file-type-git",
   },
-  {
-    name: "Bash",
 
-    icon: "skill-icons:bash-dark",
-  },
-  {
-    name: "Ubuntu",
-    icon: "logos:ubuntu",
-  },
   {
     name: "VsCode",
     icon: "devicon:vscode",

@@ -35,12 +35,13 @@
 :root {
   --text-color:  rgb(12 12 12);
   --secundary-color: #F1F1F1;
-  --black:rgb(12 12 12);
+  --black:rgb(0, 0, 0);
   --white: #F1F1F1;
-  --french-violet: 102, 0, 204;
+  --french-violet: 0, 65, 239;
+  //--french-violet: 10, 26, 47;
 }
 
 .dark {
   --text-color: #F1F1F1;
-  --secundary-color: rgb(10, 10, 10);
+  --secundary-color: rgb(0, 0, 0);
 }

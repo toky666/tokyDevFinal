@@ -12,12 +12,13 @@ import Skills from "@src/components/organisms/Skills/Skills.astro";
 import Portfolio from "@src/components/organisms/Portfolio/Portfolio.astro";
 import Social from "@src/components/organisms/Social/Social.astro";
 import Footer from "@molecules/Footer/Footer.astro";
+import BaseHead from "@src/components/BaseHead.astro";
 export const prerender = true;
 ---
 
-<Layout>
+<Layout>    
   <BackgroundGradient>
-    <Hero/>
+    <Hero />
   </BackgroundGradient>
   <DividerTop />
   <About />
@@ -27,7 +28,7 @@ export const prerender = true;
 </Layout>
 <Portfolio cardsLength={3} server:defer />
 <DividerBottom fill="shape-fill-3" />
-<Social server:defer/>
+<Social server:defer />
 <Footer />
 <ToastNotification />
 <script>

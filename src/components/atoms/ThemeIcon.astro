@@ -1,13 +1,26 @@
 ---
+
 ---
+
 <script>
   const themeToggle = document.getElementById("themeToggle");
+
+  // SIEMPRE true al cargar
+  toggleDarkMode(false);
+
   themeToggle?.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
+    const isDark = document.documentElement.classList.contains("dark-mode");
+    toggleDarkMode(!isDark);
   });
-  </script>
 
-<button id="themeToggle">
+  function toggleDarkMode(state: boolean) {
+    document.documentElement.classList.toggle("dark-mode", state);
+    localStorage.setItem("dark-mode", String(state));
+  }
+</script>
+
+<button id="themeToggle" aria-label="Toggle dark mode">
   <iconify-icon
     class="sun"
     icon="line-md:sun-rising-loop"
