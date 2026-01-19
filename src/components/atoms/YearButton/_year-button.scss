@@ -6,11 +6,11 @@ button {
     font-size: 1em;
     font-weight: 600;
     font-family: inherit;
-    background-color: #1c0161;
-    color: $ufo-green;
+    background-color: #020e56;
+    color: aqua;
     cursor: pointer;
     transition: border-color 0.25s;
   }
   .year__btn.is-active {
-    background: #150022;
+    background: #04071a;
   }

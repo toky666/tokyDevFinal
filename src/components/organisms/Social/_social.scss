@@ -11,10 +11,10 @@
   background-color: $cetacean-purple;
   background: linear-gradient(
     180deg,
-    rgb(20, 0, 48) 6%,
+    #010512 6%,
     rgba(34, 2, 80, 0.103) 10%
   ),
-  url("/img/cuadricula.svg");
+  url("/img/cuadricula.avif");
   background-size: cover;
   @media screen and (max-width: 980px) {
     min-height: 200%;

@@ -16,9 +16,9 @@
 
 .calendar__container {
   padding: 1rem 2rem;
-  background: #19013a;
+  background: #04071a;
   border: 1px solid rgba(8, 214, 255, 0.418);
-  box-shadow: -1px 1px 6px -1px rgba(43, 43, 43, 0.768627451);
+  box-shadow: -1px 1px 6px -1px aqua;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 15px;
@@ -35,9 +35,9 @@
   }
 
   .dark .calendar__container {
-    background: rgba(29, 1, 56, 0.411);
+    background: #04071a;
     border: 1px solid rgba(72, 252, 198, 0.151);
-    box-shadow: -1px 1px 6px -1px #4d008069;
+    box-shadow: -1px 1px 6px -1px #04071a;
   }
 }
 .year__buttons {

@@ -21,7 +21,7 @@
      display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background: rgba(17, 0, 39, 0.47);
+    background: #01041280;
     backdrop-filter: blur(19px);
     transform: translateY(-6px);
     min-height: 254px;
@@ -65,7 +65,7 @@
   width: 0.5rem;
 }
 .card__description::-webkit-scrollbar-track {
-  background: #7d37df;
+  background: #010412;
 }
 .card__description::-webkit-scrollbar-thumb {
   background: #3aada3;
@@ -104,7 +104,7 @@
     position: absolute;
     top: 120%;
     left: -200%;
-    background: #1c004d;
+    background: #010412;
     color: $ufo-green;
     padding: 0.4rem 0.5rem;
     border-radius: 5px;

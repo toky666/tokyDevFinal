@@ -53,7 +53,8 @@
     @include text-gradient("ligth");
     color: $ufo-green;
     font-size: 2rem;
-    letter-spacing:10px;
+    font-weight: bold;
+    letter-spacing:9px;
     border-right: 5px solid;
     width:100%;
     white-space:nowrap;
@@ -79,6 +80,7 @@
 .dark .hero__title span{
   color: aqua;
   filter: drop-shadow(0 0 12px aqua);
+  
 }
 /* animation cursor blinking */
 @keyframes cursor {
