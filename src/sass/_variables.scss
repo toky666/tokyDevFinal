@@ -3,6 +3,7 @@
 $mainColor: var(--text-color);
 $secundaryColor: var(--secundary-color);
 $french-violet: var(--french-violet);
+$french-white: #fff;
 $cetacean-purple:#140030;
 $ufo-green: #33FF76;
 $aqua: #58ECFF;
@@ -105,5 +106,5 @@ $color-background-after: #060b1f;
 
 /* Gradientes del texto */
 $cetacean-purple: #010412;
-$text-over-dark: radial-gradient(circle,#6600CC 0%,#009990 100%);
+$text-over-dark: radial-gradient(circle,#191498 0%,#006999 100%);
 $text-over-light: radial-gradient(circle,#33FF76 0%,#58ECFF 100%);

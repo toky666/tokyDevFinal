@@ -1,2 +1,2 @@
-export const SITE_TITLE = "SofiDev";
-export const SITE_DESCRIPTION = "Ángela sofía Osorio |  Javaacript  Developer";
+export const SITE_TITLE = "TokyDev";
+export const SITE_DESCRIPTION = "Yoky Coronel Chavez | Full Stack Developer";

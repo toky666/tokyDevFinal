@@ -3,7 +3,7 @@ export const userData = {
   name: "Toky",
   lastName: "Dev",
   userName: "TokyDev",
-  sloganHero1: "Javascript Developer in Bolivia",
+  sloganHero1: "Full Stack Developer in Bolivia",
   profilePicture: "/img/raw.png",
   profilePicture2: "/img/raw.png",
   aboutPicture:

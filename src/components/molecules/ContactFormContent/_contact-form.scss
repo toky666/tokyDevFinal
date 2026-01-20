@@ -61,6 +61,7 @@
   font-size: 1.4rem;
   background: $text-over-dark;
   &:hover {
-    background: rgb($french-violet);
+    background: $french-white;
+    color: #090c12;
   }
 }
