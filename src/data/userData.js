@@ -17,6 +17,6 @@ export const userData = {
   },
   terminalInfo:
     "ls skills\n Javascript, React, Astro, NextJs Node.js, Express, Sass, Tailwind, Scss, Bootstrap, MySQL, Wordpress, CSS, Vue.js, Svelte\n\nls tools\n- figma, vs code, vercel\nbash, github, git, photoshop\n illustrator, ",
-  cv: "/docs/CV_AngelaSofía_Osorio_2025.pdf",
-  email: "contact@sofidev.top",
+  cv: "/docs/cv.pdf",
+  email: "yokycoronelchavez@gmail.com",
 };

@@ -35,5 +35,5 @@ export default function ToastNotification(msg, type = "info") {
   // Eliminar el toast después de 5 segundos
   setTimeout(() => {
     toast.remove();
-  }, 10000);
+  }, 6000);
 }
