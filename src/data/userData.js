@@ -10,13 +10,14 @@ export const userData = {
     "/img/toky_perfil.png",
   aboutSkills: {
     intro:
-      "Skilled in modern web technologies, I create dynamic and user-centric digital solutions. \n\nMy expertise in both front-end and back-end development allows for the seamless integration of design and functionality, ensuring impactful and engaging applications.\n",
-    highlighted: "Tools",
+      "Backend and frontend development specialist focused on creating digital solutions that combine technical precision with an intuitive user experience. \n\nI design efficient architectures for institutional systems, document validation, and accounting simulations, integrating security, scalability, and functional aesthetics.My approach transforms complex processes into accessible, reliable, and results-oriented platforms.",
+    highlighted1: "Developer skills",
+    highlighted2: "Audit skills",
     continuation:
-      "Leveraging advanced tools and platforms, I streamline both design and development processes. \n\n This approach ensures high-quality results, blending technical proficiency with creative design to enhance project outcomes.🚀",
+      "Currently training to become a certified public accountant, I apply my knowledge of general, banking, and corporate accounting, along with internal, tax, and forensic auditing. \n\n My experience focuses on financial fraud prevention and institutional strengthening, integrating regulations such as NAG, NB-SABS, and SAFCO with cybersecurity practices. I develop digital solutions that support regulatory analysis, tax management, and administrative transparency.🚀",
   },
   terminalInfo:
-    "ls skills\n Javascript, React, Astro, NextJs Node.js, Express, Sass, Tailwind, Scss, Bootstrap, MySQL, Wordpress, CSS, Vue.js, Svelte\n\nls tools\n- figma, vs code, vercel\nbash, github, git, photoshop\n illustrator, ",
+    "Backend Developer:\n NodeJS, MolecularJS, and Java.\n\nFrontend Developer:\n HTML, CSS, JS, Bootstrap, Tailwind, SASS, Angular, and Astro. \n\nDatabases: \nMongoDB and MySQL. ",
   cv: "/docs/cv.pdf",
   email: "yokycoronelchavez@gmail.com",
 };

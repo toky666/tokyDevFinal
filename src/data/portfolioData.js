@@ -1,75 +1,33 @@
- const portafolioData = [
+const portafolioData = [
   {
-    imgSrc:
-      "https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100",
-    title: "Alura Flix",
-    skills: ["React", "StyledComponents"],
+    imgSrc: "/img/portfolios/olakontaIMG.png",
+    title: "Free Financial and Professional Education",
+    skills: ["CSS", "HTML", "JavaScript"],
     excerpt:
-      "Final project for the One Oracle Next Education Program. Educational programming video website demonstrating CRUD requests.",
-    demoURL: "https://alura-flix-self.vercel.app/",
-    repoURL: "https://github.com/SofiDevO/alura-flix",
-    description: `<p>Alura Flix is a <strong>React</strong> project styled with <strong>Styled Components</strong>. It demonstrates a full CRUD workflow for managing educational programming videos. Built as the final project for the One Oracle Next Education Program, it features a clean UI and responsive design.</p>`
+      "It is a platform that offers accessible courses and training in areas such as accounting, corporate finance, financial mathematics and customer service, with the aim of promoting personal, professional and business development.",
+    demoURL: "https://olakonta.vercel.app/",
+    repoURL: "https://github.com/toky666/olakonta",
+    description: `<p><strong>Ola Konta</strong> is a free educational platform dedicated to providing training programs in finance, accounting, and professional development. <strong>Its mission</strong> is to promote key skills such as collaboration, communication, decision-making and practical use of technology. It offers courses in areas such as: <strong>Banking Accounting, Financial Mathematics, Corporate Finance and Excel for Management.</strong></p>`,
   },
   {
-    imgSrc:
-      "https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100",
-    title: "Alura Geek",
-    skills: ["JavaScript", "CSS"],
-    excerpt: "Final project for the One Oracle Next Education Program. Educational programming video website demonstrating CRUD requests.",
-    demoURL: "https://alura-geek-ruddy.vercel.app/",
-    repoURL: "https://github.com/SofiDevO/alura-geek",
-    description: `<p>Alura Geek is a web application built with <strong>JavaScript</strong> and <strong>CSS</strong>. It allows users to browse and manage a collection of geek products, implementing CRUD operations and responsive layouts. Developed as part of the One Oracle Next Education Program.</p>`
-  },
-  {
-    imgSrc:
-      "https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100",
-    title: "React ORG",
-    skills: ["React", "CSS"],
-    excerpt: "Final project for the One Oracle Next Education Program. Educational programming video website demonstrating CRUD requests.",
-    demoURL: "https://react-org-delta.vercel.app/",
-    repoURL: "https://github.com/SofiDevO/react-org",
-    description: `<p>React ORG is a team management app built with <strong>React</strong> and <strong>CSS</strong>. It showcases dynamic team creation, member assignment, and interactive UI elements. Created as a capstone project for the One Oracle Next Education Program.</p>`
-  },
-  {
-    imgSrc:
-      "https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100",
-    title: "My Portfolio",
-    skills: ["Astro", "React", "JavaScript"],
-    excerpt: "Final project for the One Oracle Next Education Program. Educational programming video website demonstrating CRUD requests.",
-    demoURL: "https://sofidev-portfolio-astro-delta.vercel.app/",
-    repoURL: "https://github.com/SofiDevO/sofidev-portfolio-astro",
-    description: `<p>This portfolio site is built with <strong>Astro</strong>, <strong>React</strong>, and <strong>JavaScript</strong>. It highlights my projects, skills, and experience, featuring a modern design and fast performance. Developed as a showcase for the One Oracle Next Education Program.</p>`
-  },
-  {
-    imgSrc:
-      "https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100",
-    title: "Eco Store",
-    skills: ["Sass", "JavaScript"],
-    excerpt: "Made with sass for the,Sass fundamentals course",
-    demoURL: "https://sofidevo.github.io/eco-store-sass/",
-    repoURL: "https://github.com/SofiDevO/eco-store-sass",
-    description: `<p>Eco Store is an e-commerce landing page created with <strong>Sass</strong> and <strong>JavaScript</strong>. It demonstrates advanced Sass features and modular CSS architecture, built for the Sass Fundamentals course.</p>`
-  },
-  {
-    imgSrc:
-      "https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100",
-    title: "fruto & Fruta",
-    skills: ["Bootstrap", "JavaScript"],
-    excerpt: "Made with Bootstrap for the, Bootstrap  course",
-    demoURL: "https://sofidevo.github.io/bootstrap-curso/",
-    repoURL: "https://github.com/SofiDevO/bootstrap-curso",
-    description: `<p>fruto & Fruta is a responsive website built with <strong>Bootstrap</strong> and <strong>JavaScript</strong>. It features modern layouts and interactive components, developed for the Bootstrap course.</p>`
-  },
-  {
-    imgSrc:
-      "https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_H.jpg?crop=16:9&width=960&enable=upscale&quality=100",
-    title: "Message Encryptor",
-    skills: ["JavaScript", "CSS"],
+    imgSrc: "/img/portfolios/bancosIMG.png",
+    title: "Banking Community – Accounting and Finance Platform",
+    skills: ["CSS", "HTML", "JavaScript"],
     excerpt:
-      "Incididunt amet proident id elit id excepteur  eiusmod esse consequat veniam. Eu reprehenderit quis deserunt ea non deserunt dolor consequat fugiat. \n\n Consectetur deserunt dolor do dolore occaecat reprehenderit ipsum ex.",
-    demoURL: "https://sofidevo.github.io/encriptador-mensajes/",
-    repoURL: "https://github.com/SofiDevO/encriptador-mensajes",
-    description: `<p>Message Encryptor is a simple text encryption tool built with <strong>JavaScript</strong> and <strong>CSS</strong>. It allows users to encrypt and decrypt messages in the browser, featuring a clean and intuitive interface.</p>`
+      "An educational and collaborative initiative that brings together students and professionals to share financial statements, experiences, and resources about banking in Bolivia.",
+    demoURL: "https://bancos-web.vercel.app/",
+    repoURL: "https://github.com/toky666/Bancos-Web",
+    description: `<p><strong>Comunidad Bancos</strong> is a virtual platform created by students to simplify the learning of banking accounting and finance. Their mission is to <strong>offer up-to-date information</strong> and practical tools that improve academic and professional performance.</p>`,
+  },
+  {
+    imgSrc: "/img/portfolios/costoIMG.png",
+    title: "Costos Web – Cost Management and Analysis Platform",
+    skills: ["CSS", "HTML", "JavaScript"],
+    excerpt:
+      "Costos Web is an educational and practical tool designed to support students and professionals in calculating, analyzing, and controlling business costs.",
+    demoURL: "https://costos-web.vercel.app/",
+    repoURL: "https://github.com/toky666/Costos-Web",
+    description: `<p>It allows you to understand and apply key concepts of <strong>cost accounting, budgeting, and financial management.</strong> It promotes values ​​of <strong>precision, transparency and efficiency</strong>, helping to train professionals capable of making strategic decisions based on data.</p>`,
   },
 ];
 
@@ -88,7 +46,7 @@ export const skillIcons = {
   Wordpress: "skill-icons:wordpress",
   HTML: "skill-icons:html",
   Vue: "skill-icons:vuejs-dark",
-  GraphQL: "skill-icons:graphql-dark"
+  GraphQL: "skill-icons:graphql-dark",
 };
 const skillsIconsMapped = portafolioData.map((item) => {
   return {

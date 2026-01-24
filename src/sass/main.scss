@@ -33,12 +33,35 @@
 
 
 :root {
-  --text-color:  rgb(12 12 12);
+  --text-color: rgb(12 12 12);
   --secundary-color: #F1F1F1;
-  --black:rgb(0, 0, 0);
+  --black: rgb(0, 0, 0);
   --white: #F1F1F1;
   --french-violet: 0, 65, 239;
   //--french-violet: 10, 26, 47;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Fondo del track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Color del thumb (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background-color: aqua;
+  /* Verde brillante */
+  border-radius: 4px;
+}
+
+/* Hover del thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(12, 217, 217);
+  /* Verde más claro al pasar el mouse */
 }
 
 .dark {

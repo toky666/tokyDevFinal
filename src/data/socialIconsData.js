@@ -6,7 +6,7 @@ export const socialIconsData = [
   },
   {
     icon: "simple-icons:linkedin",
-    name: "LinkedIn",
+    name: "Linkedin",
     link: "https://www.linkedin.com/in/tokydev/",
   },
   {

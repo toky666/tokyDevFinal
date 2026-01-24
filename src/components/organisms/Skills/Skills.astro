@@ -19,32 +19,48 @@ import { toolsData } from "@data/ToolsData";
     <div class="skills__info">
       <div class="skills__textos">
         <Title titleDesc="Skills" clase="title-dark" />
+        <h5 class="skills__description skills__description--subtitle">
+          {userData.aboutSkills.highlighted1}
+        </h5>
         <p class="skills__description">
           {userData.aboutSkills.intro}
         </p>
         <h5 class="skills__description skills__description--subtitle">
-          {userData.aboutSkills.highlighted}
+          {userData.aboutSkills.highlighted2}
         </h5>
         <p class="skills__description">
           {userData.aboutSkills.continuation}
         </p>
       </div>
       <div class="skills__avatar__container">
+        <CardTerminal clase="skills__terminal skills__popup">
+          <!-- Esto sirve de manera directa
+          <p class="skills__terminal__content">
+            {userData.terminalInfo}
+            <span class="cursor"></span></p>
+           -->
+          <p class="skills__terminal__content">
+					<span class="skills__terminal__textos">Backend Developer:</span> 
+          NodeJS, MoleculerJS, and Java.
+
+          <span class="skills__terminal__textos">Frontend Developer:</span> 
+          HTML, CSS, JS, Bootstrap, Tailwind, SASS, Angular, and Astro.
+          <span class="skills__terminal__textos">Databases:</span> 
+          MongoDB and MySQL.
+          <span class="skills__terminal__textos">3D Modeling and Animation:</span> 
+          Blender, Unity and Vuforia.<span class="cursor"></span>
+          
+				</p>
+          
+        </CardTerminal>
         <img
           id="skills__avatar"
           class="skills__avatar"
-          src="/img/michi.png"
+          src="/img/michiForense.png"
           alt={`avatar funko of ${userData.userName}`}
           width="300"
           height="300"
         />
-
-        <CardTerminal clase="skills__terminal skills__popup">
-          <p class="skills__terminal__content">
-            {userData.terminalInfo}
-            <span class="cursor"></span>
-          </p>
-        </CardTerminal>
       </div>
     </div>
     <CarrouselSkills skillsData={skillsData} />

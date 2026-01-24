@@ -4,5 +4,5 @@ export const menuData = [
     { enlace: "/#skills", texto: "Skills" },
     { enlace: "/#portfolio", texto: "Portfolio" },
     { enlace: "/#social", texto: "Social" },
-    { enlace: "https://blog.itssofi.dev/", texto: "Blog" },
+    { enlace: "https://toky-mantenimiento.vercel.app", texto: "Blog" },
   ];

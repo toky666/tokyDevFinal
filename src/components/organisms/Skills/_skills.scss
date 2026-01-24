@@ -1,14 +1,13 @@
 @use "@sass/mixins" as *;
 @use "@sass/variables" as *;
 
-
 .skills {
   background: $cetacean-purple;
   width: 100%;
   display: flex;
   justify-content: center;
   writing-mode: horizontal-tb;
-  padding-block: 30rem;
+  padding-block: 8rem;
   min-height: 100dvh;
 
   @include respond-to("medium") {
@@ -26,7 +25,7 @@
       @include centerFlex();
       align-self: center;
       max-width: 950px;
-      gap: 7rem;
+      gap: 12rem;
 
       @include respond-to("medium") {
         flex-wrap: wrap-reverse;
@@ -46,6 +45,7 @@
         align-self: center;
         white-space: pre-line;
         margin-bottom: 1rem;
+        text-align: justify;
       }
 
       .skills__description--subtitle {
@@ -54,17 +54,24 @@
       }
 
       .skills__avatar__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
         position: relative;
-        flex-shrink: 1;
+        flex-shrink: 0;
+        height: 100%;
+        padding: 1rem;
       }
     }
   }
 }
 
+
 .skills__popup {
   width: max-content;
   max-width: 54rem;
-  bottom: 97%;
+  bottom: 50%;
   left: 60%;
   z-index: 200;
   transform: translateX(-50%);
@@ -72,15 +79,14 @@
   opacity: 0;
   transition: opacity 0.4s ease;
   @include respond-to("medium") {
-    bottom: 95%;
+    bottom: 25%;
     left: 50%;
     max-width: none;
     width: 100%;
   }
 
   .skills__terminal__content {
-    padding: .4rem;
-    ;
+    padding: 0.4rem;
     white-space: pre-line;
     @include typography(1.6rem, 1.5, 400);
     @include font-family("fira-code");
@@ -95,6 +101,11 @@
       font-size: 1.7rem;
     }
   }
+}
+
+.skills__terminal__textos{
+  color:#f1f1f1;
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
 }
 
 .skills__popup.active {
@@ -120,17 +131,13 @@
 }
 
 .cursor {
-  margin-left: .4rem;
+  margin-left: 0.4rem;
   border-right: 3px solid;
   width: 100%;
-  animation:
-
-    cursor .4s step-end infinite alternate;
-
+  animation: cursor 0.4s step-end infinite alternate;
 }
 
 @keyframes cursor {
-
   50% {
     border-color: transparent;
   }

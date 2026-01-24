@@ -11,10 +11,10 @@ import Button from "@components/atoms/Button/Button.astro";
   <section class="error">
   <div class="error__container">
 
-    <Title titleDesc="404 NOT FOUND" clase="" />
-    <p class="error__message ">La pagina a la que tratas de acceder no existe</p>
-    <p class="error__message">Esta página está en construcción. Por favor, vuelve más tarde</p>
-    <img src="/img/sofi-laptop.gif" alt="logo" />
+    <p class="title404">404 NOT FOUND</p>
+    <p class="error__message ">The page you are trying to access does not exist.</p>
+    <p class="error__message">This page is under construction. Please try again later.</p>
+    <img src="/img/michi404.gif" alt="logo" width="300px" height="300px"/>
     <Button content="Volver" id="backButton"/>
   </div>
   </section>
@@ -27,7 +27,7 @@ import Button from "@components/atoms/Button/Button.astro";
     display: grid;
     place-content: center;
     justify-items: center;
-    background: url("/img/Waneella.gif");
+    background: url("/img/lluvia.gif");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -47,7 +47,14 @@ import Button from "@components/atoms/Button/Button.astro";
 
   .error__message {
     font-size: 1.8rem;
-    color: aqua
+    color: rgb(255, 255, 255)
+  }
+
+  .title404 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(0 0 14px rgb(244, 3, 3));
   }
 
   .error > *:not(:last-child) {
